@@ -10,6 +10,7 @@
 
 body{
     background-color: #343434;
+    /* border: white dotted; */
 }
 
 .hangman_figure{
@@ -97,7 +98,6 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
-
 }
 .alphabets button{
     color: white;
@@ -131,4 +131,97 @@ body{
 
 .hidden{
     display: none;
+}
+/* ///////////////////  RESPONSIVENESS  ///////////////////// */
+@media (min-width: 0px) and (max-width: 400px){
+    .alphabets button{
+        height: 45%;
+        width: 10%;
+        border: solid 2px white;
+        border-radius: 8px;
+        font-size: 1rem;
+        margin: 0.2rem;
+    }
+    .alphabets_row{
+        margin-top: 10%;
+        flex-wrap: wrap;
+        height: 45%;
+    }
+    .msg{
+        font-size: 1rem;
+    }
+    .alphabet_box p{
+        font-size: 1.2rem;
+    }
+    .hangman_figure{
+        height: 55vh;
+    }
+    .guess_word{
+        height: 10.5vh;
+    }
+    .main_box{
+        width: 60%;
+        height: 70%;
+    }
+}
+@media (min-width: 400px) and (max-width: 550px){
+    .alphabets button{
+        height: 60%;
+        width: 9%;
+        border: white 3px solid;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        margin: 0.1rem;
+    }
+    .alphabets_row{
+        margin-top: 3%;
+        flex-wrap: wrap;
+        height: 42%;
+    }
+    .msg{
+        font-size: 2rem;
+    }
+    .alphabet_box p{
+        font-size: 1.4rem;
+    }
+    .hangman_figure{
+        height: 60vh;
+    }
+    .guess_word{
+        height: 11.5vh;
+    }
+    .main_box{
+        width: 60%;
+        height: 70%;
+    }
+}
+@media (min-width: 550px) and (max-width: 800px){
+    .alphabets button{
+        height: 60%;
+        width: 8%;
+        border: solid 4px white;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        margin: 0.3rem;
+    }
+    .alphabets_row{
+        flex-wrap: wrap;
+        height: 40%;
+    }
+    .msg{
+        font-size: 3rem;
+    }
+    .alphabet_box p{
+        font-size: 1.6rem;
+    }
+    .hangman_figure{
+        height: 67vh;
+    }
+    .guess_word{
+        height: 13vh;
+    }
+    .main_box{
+        width: 40%;
+        height: 60%;
+    }
 }

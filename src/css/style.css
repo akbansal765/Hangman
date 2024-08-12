@@ -22,5 +22,35 @@ img{
 }
 h1{
     color: white;
-    font-size: 3.5rem;
+    font-size: 6vw;
+}
+/* //////////////////  RESPONSIVENESS  ////////////////////// */
+
+@media screen and (max-width : 900px) {
+    img{
+        height: 80px;
+        width: 80px;
+        margin-top: 100%;
+    }
+}
+@media screen and (max-width : 800px) {
+    img{
+        height: 60px;
+        width: 60px;
+        margin-top: 70%;
+    }
+}
+@media screen and (max-width : 700px) {
+    img{
+        height: 40px;
+        width: 40px;
+        margin-top: 60%;
+    }
+}
+@media screen and (max-width : 600px) {
+    img{
+        height: 35px;
+        width: 35px;
+        margin-top: 50%;
+    }
 }

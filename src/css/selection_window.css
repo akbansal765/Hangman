@@ -7,11 +7,12 @@
     font-family: 'Press Start 2P', sans-serif;
 
 }
-
+body{
+    background-color: #343434;
+}
 .background{
     height: 100vh;
     width: 100%;
-    background-color: #343434;
 }
 .header{
     height: 20%;
@@ -52,4 +53,32 @@
 }
 .btn:hover{
     cursor: pointer;
+}
+/* /////////////////////  RESPONSIVENESS  /////////////////////// */
+@media (max-width : 400px) {
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .btn{
+        width: 75%;
+        font-size: 0.85rem;
+    }
+}
+@media (min-width: 400px) and (max-width : 600px) {
+    .header h1{
+        font-size: 2rem;
+    }
+    .btn{
+        width: 73%;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 600px) and (max-width : 800px) {
+    .header h1{
+        font-size: 3rem;
+    }
+    .btn{
+        width: 70%;
+        font-size: 1.3rem;
+    }
 }
